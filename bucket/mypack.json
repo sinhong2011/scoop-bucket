@@ -1,0 +1,34 @@
+{
+  "version": "0.1.0",
+  "description": "Turn any website or local HTML project into a native desktop app",
+  "homepage": "https://github.com/sinhong2011/mypack",
+  "license": "Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/sinhong2011/mypack/releases/download/v0.1.0/mypack-setup-0.1.0-amd64.exe#/setup.exe",
+      "hash": "566fe8e646f8779dc611416c30ce69fd99e141eb07c0fd3c13b8a9e555b5faba"
+    },
+    "arm64": {
+      "url": "https://github.com/sinhong2011/mypack/releases/download/v0.1.0/mypack-setup-0.1.0-arm64.exe#/setup.exe",
+      "hash": "a705eecf48bda161119c12fff37ddb6ac385279e24d2fab1d0a079fd5a697bec"
+    }
+  },
+  "installer": {
+    "script": [
+      "Start-Process -Wait \"$dir\\setup.exe\" -ArgumentList '/S', \"/D=$dir\"",
+      "Remove-Item \"$dir\\setup.exe\""
+    ]
+  },
+  "uninstaller": {
+    "script": "if (Test-Path \"$dir\\Uninstall.exe\") { Start-Process -Wait \"$dir\\Uninstall.exe\" -ArgumentList '/S', \"_?=$dir\" }"
+  },
+  "bin": [["Mypack.exe", "mypack"]],
+  "shortcuts": [["Mypack.exe", "Mypack"]],
+  "checkver": "github",
+  "autoupdate": {
+    "architecture": {
+      "64bit": { "url": "https://github.com/sinhong2011/mypack/releases/download/v$version/mypack-setup-$version-amd64.exe#/setup.exe" },
+      "arm64": { "url": "https://github.com/sinhong2011/mypack/releases/download/v$version/mypack-setup-$version-arm64.exe#/setup.exe" }
+    }
+  }
+}
