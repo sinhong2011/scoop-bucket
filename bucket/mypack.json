@@ -1,16 +1,16 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Turn any website or local HTML project into a native desktop app",
   "homepage": "https://github.com/sinhong2011/mypack",
   "license": "Apache-2.0",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/sinhong2011/mypack/releases/download/v0.2.0/mypack-setup-0.2.0-amd64.exe#/setup.exe",
-      "hash": "2abf052f6998c0d7c22701ae8fe4eac24376c202db6b965a2491b19b2f575e66"
+      "url": "https://github.com/sinhong2011/mypack/releases/download/v0.3.0/mypack-setup-0.3.0-amd64.exe#/setup.exe",
+      "hash": "d39c1bba610e2192ec8149c1ab272390284c56025b2cd05cddee563462738985"
     },
     "arm64": {
-      "url": "https://github.com/sinhong2011/mypack/releases/download/v0.2.0/mypack-setup-0.2.0-arm64.exe#/setup.exe",
-      "hash": "55397b24fdde8dc5018d6dc231e514d312952d660503dc3b563dd8fba4629b77"
+      "url": "https://github.com/sinhong2011/mypack/releases/download/v0.3.0/mypack-setup-0.3.0-arm64.exe#/setup.exe",
+      "hash": "dc66c9eb0ca4564cfe014d6f306ad49242f1343d0851e19fdace247930b59c99"
     }
   },
   "installer": {
@@ -22,8 +22,8 @@
   "uninstaller": {
     "script": "if (Test-Path \"$dir\\Uninstall.exe\") { Start-Process -Wait \"$dir\\Uninstall.exe\" -ArgumentList '/S', \"_?=$dir\" }"
   },
-  "bin": [["Mypack.exe", "mypack"]],
-  "shortcuts": [["Mypack.exe", "Mypack"]],
+  "bin": [["MyPack.exe", "mypack"]],
+  "shortcuts": [["MyPack.exe", "MyPack"]],
   "checkver": "github",
   "autoupdate": {
     "architecture": {
