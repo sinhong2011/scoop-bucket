@@ -1,16 +1,16 @@
 {
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Turn any website or local HTML project into a native desktop app",
   "homepage": "https://github.com/sinhong2011/mypack",
   "license": "Apache-2.0",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/sinhong2011/mypack/releases/download/v0.4.0/mypack-setup-0.4.0-amd64.exe#/setup.exe",
-      "hash": "eab40bf4b495701b7b026d8fdd4671cbb1f8b9fc30d49a6d543e80030078ab53"
+      "url": "https://github.com/sinhong2011/mypack/releases/download/v0.5.0/mypack-setup-0.5.0-amd64.exe#/setup.exe",
+      "hash": "274c4d55cb5211cef49ac5a9ddc5476d104214ab965b78cde68b3851a18d580b"
     },
     "arm64": {
-      "url": "https://github.com/sinhong2011/mypack/releases/download/v0.4.0/mypack-setup-0.4.0-arm64.exe#/setup.exe",
-      "hash": "40f8706fd66b755bb9767ee29d30d6c25bb59371d904daeec6dff5fcd0b6b660"
+      "url": "https://github.com/sinhong2011/mypack/releases/download/v0.5.0/mypack-setup-0.5.0-arm64.exe#/setup.exe",
+      "hash": "363b08c68c26dbf01d80aece62665a9dd5d7c583ca7d6d73a7269e414f0a3e2f"
     }
   },
   "installer": {
